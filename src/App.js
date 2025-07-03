@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p>I’m Sachin — Web Developer & Designer</p>
       </header>
+
+      <section className="about">
+        <h2>About Me</h2>
+        <p>I build responsive, clean and modern websites using React, HTML, CSS, and JS.</p>
+      </section>
+
+      <footer className="footer">
+        <p>&copy; 2025 Sachin Singh. All rights reserved.</p>
+      </footer>
     </div>
   );
 }
