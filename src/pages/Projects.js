@@ -5,9 +5,9 @@ function Projects() {
     <section className="projects">
       <h2>Featured Projects</h2>
       <ul>
-        <li>🌐 Portfolio Website – This very site!</li>
-        <li>🎨 Logo Design – For small businesses</li>
-        <li>📱 UI Designs – Mobile apps & landing pages</li>
+        <li> Portfolio Website – This very site!</li>
+        <li> Logo Design – For small businesses</li>
+        <li> UI Designs – Mobile apps & landing pages</li>
       </ul>
     </section>
   );
