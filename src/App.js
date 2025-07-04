@@ -1,23 +1,26 @@
 import React from 'react';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import About from './pages/About';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
 
 function App() {
   return (
-    <div className="App">
-      <header className="hero">
-        <h1>Welcome to My Portfolio</h1>
-        <p>I’m Sachin — Web Developer & Designer</p>
-      </header>
-
-      <section className="about">
-        <h2>About Me</h2>
-        <p>I build responsive, clean and modern websites using React, HTML, CSS, and JS.</p>
-      </section>
-
-      <footer className="footer">
-        <p>&copy; 2025 Sachin Singh. All rights reserved.</p>
-      </footer>
-    </div>
+    <Router>
+      <Navbar />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </main>
+      <Footer />
+    </Router>
   );
 }
 

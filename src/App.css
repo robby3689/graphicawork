@@ -1,27 +1,76 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #f5f5f5;
+  font-family: 'Poppins', sans-serif;
+  background: #fefefe;
+  color: #222;
 }
 
-.App {
+.navbar {
+  background: #2e7d32;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero, .about, .projects, .contact {
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: auto;
   text-align: center;
 }
 
-.hero {
-  background-color: #222;
+.btn {
+  background: #fdd835;
+  color: #000;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: auto;
+}
+
+form input, form textarea {
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: #2e7d32;
   color: white;
-  padding: 60px 20px;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
-.about {
-  background-color: white;
-  padding: 40px 20px;
-}
-
-.footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  font-size: 14px;
+footer {
+  background: #1b5e20;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
 }
