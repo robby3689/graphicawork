@@ -37,3 +37,32 @@
 .btn.secondary:hover {
   background-color: #e6c200;
 }
+.thumbnail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.thumbnail-card {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.thumbnail-card:hover {
+  transform: translateY(-5px);
+}
+
+.thumbnail-card h3 {
+  margin-bottom: 0.75rem;
+  color: #333;
+}
+
+.thumbnail-card p {
+  color: #555;
+  font-size: 0.95rem;
+}
