@@ -36,11 +36,20 @@ function Contact() {
         from_email: formData.email,
         subject: formData.subject || 'New Contact Form Submission',
         message: formData.message,
-        to_email: 'sachin@graphicawork.xyz'
+        to_email: 'sachin@graphicawork.xyz',
+        // Additional parameters that might be needed
+        name: formData.name,
+        email: formData.email
       };
       
+      console.log('Sending email with params:', templateParams);
+      console.log('Service ID:', serviceId);
+      console.log('Template ID:', templateId);
+      console.log('Public Key:', publicKey);
+      
       // Send email using EmailJS
-      await emailjs.send(serviceId, templateId, templateParams, publicKey);
+      const result = await emailjs.send(serviceId, templateId, templateParams, publicKey);
+      console.log('Email sent successfully:', result);
       
       // Success
       setIsSubmitting(false);
