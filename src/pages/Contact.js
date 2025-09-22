@@ -26,9 +26,9 @@ function Contact() {
     
     try {
       // EmailJS configuration
-      const serviceId = 'service_graphicawork';
-      const templateId = 'template_contact';
-      const publicKey = 'YOUR_PUBLIC_KEY'; // You'll need to get this from EmailJS
+      const serviceId = 'service_wxi4cli';
+      const templateId = 'template_294qdph';
+      const publicKey = 'rIJfV8Pv8hoA51554';
       
       // Prepare template parameters
       const templateParams = {
