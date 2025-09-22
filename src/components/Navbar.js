@@ -3,12 +3,13 @@ import { Link, useLocation } from 'react-router-dom';
 import Logo from './Logo';
 import LogoAlt from './LogoAlt';
 import LogoModern from './LogoModern';
+import LogoSimple from './LogoSimple';
 import './Navbar.css';
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [currentLogo, setCurrentLogo] = useState('original');
+  const [currentLogo, setCurrentLogo] = useState('simple');
   const location = useLocation();
 
   useEffect(() => {
@@ -38,6 +39,8 @@ function Navbar() {
         return <LogoAlt size={40} className="logo-svg" />;
       case 'modern':
         return <LogoModern size={40} className="logo-svg" />;
+      case 'simple':
+        return <LogoSimple size={40} className="logo-svg" />;
       default:
         return <Logo size={40} className="logo-svg" />;
     }

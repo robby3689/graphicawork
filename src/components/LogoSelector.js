@@ -2,15 +2,17 @@ import React, { useState } from 'react';
 import Logo from './Logo';
 import LogoAlt from './LogoAlt';
 import LogoModern from './LogoModern';
+import LogoSimple from './LogoSimple';
 import './LogoSelector.css';
 
 const LogoSelector = ({ onLogoChange }) => {
-  const [selectedLogo, setSelectedLogo] = useState('original');
+  const [selectedLogo, setSelectedLogo] = useState('simple');
 
   const logos = [
     { id: 'original', name: 'Original', component: Logo },
     { id: 'minimal', name: 'Minimal', component: LogoAlt },
-    { id: 'modern', name: 'Modern', component: LogoModern }
+    { id: 'modern', name: 'Modern', component: LogoModern },
+    { id: 'simple', name: 'Simple', component: LogoSimple }
   ];
 
   const handleLogoSelect = (logoId) => {

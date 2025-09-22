@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import './Contact.css';
 
 function Contact() {
@@ -21,16 +22,42 @@ function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitStatus(null);
     
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      // EmailJS configuration
+      const serviceId = 'service_graphicawork';
+      const templateId = 'template_contact';
+      const publicKey = 'YOUR_PUBLIC_KEY'; // You'll need to get this from EmailJS
+      
+      // Prepare template parameters
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        subject: formData.subject || 'New Contact Form Submission',
+        message: formData.message,
+        to_email: 'sachin@graphicawork.xyz'
+      };
+      
+      // Send email using EmailJS
+      await emailjs.send(serviceId, templateId, templateParams, publicKey);
+      
+      // Success
       setIsSubmitting(false);
       setSubmitStatus('success');
       setFormData({ name: '', email: '', subject: '', message: '' });
       
-      // Reset status after 3 seconds
-      setTimeout(() => setSubmitStatus(null), 3000);
-    }, 1500);
+      // Reset status after 5 seconds
+      setTimeout(() => setSubmitStatus(null), 5000);
+      
+    } catch (error) {
+      console.error('Email sending failed:', error);
+      setIsSubmitting(false);
+      setSubmitStatus('error');
+      
+      // Reset error status after 5 seconds
+      setTimeout(() => setSubmitStatus(null), 5000);
+    }
   };
 
   return (
@@ -50,7 +77,7 @@ function Contact() {
               <div className="contact-icon">📧</div>
               <div>
                 <h3>Email</h3>
-                <p>hello@graphicawork.com</p>
+                <p>sachin@graphicawork.xyz</p>
               </div>
             </div>
             
@@ -146,7 +173,13 @@ function Contact() {
 
             {submitStatus === 'success' && (
               <div className="success-message">
-                Thank you! Your message has been sent successfully. I'll get back to you soon.
+                ✅ Thank you! Your message has been sent successfully. I'll get back to you soon.
+              </div>
+            )}
+            
+            {submitStatus === 'error' && (
+              <div className="error-message">
+                ❌ Sorry, there was an error sending your message. Please try again or contact me directly at sachin@graphicawork.xyz
               </div>
             )}
           </form>

@@ -252,6 +252,17 @@
   font-weight: 500;
 }
 
+.error-message {
+  background: rgba(255, 0, 0, 0.15);
+  color: #ff4444;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ff4444;
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .contact-hero h1 {
