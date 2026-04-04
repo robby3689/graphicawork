@@ -9,7 +9,7 @@ import './Navbar.css';
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [currentLogo, setCurrentLogo] = useState('simple');
+  const [currentLogo] = useState('simple');
   const location = useLocation();
 
   useEffect(() => {

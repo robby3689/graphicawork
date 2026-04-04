@@ -13,10 +13,10 @@ function Footer() {
             visual solutions that help businesses build strong brand presence.
           </p>
           <div className="footer-social">
-            <a href="#" className="social-icon" aria-label="LinkedIn">📱</a>
-            <a href="#" className="social-icon" aria-label="Dribbble">🎨</a>
-            <a href="#" className="social-icon" aria-label="Behance">📊</a>
-            <a href="#" className="social-icon" aria-label="Instagram">📸</a>
+            <button type="button" className="social-icon" aria-label="LinkedIn">📱</button>
+            <button type="button" className="social-icon" aria-label="Dribbble">🎨</button>
+            <button type="button" className="social-icon" aria-label="Behance">📊</button>
+            <button type="button" className="social-icon" aria-label="Instagram">📸</button>
           </div>
         </div>
 

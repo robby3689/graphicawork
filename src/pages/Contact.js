@@ -110,10 +110,10 @@ function Contact() {
           <div className="social-links">
             <h3>Follow My Work</h3>
             <div className="social-icons">
-              <a href="#" className="social-link">LinkedIn</a>
-              <a href="#" className="social-link">Dribbble</a>
-              <a href="#" className="social-link">Behance</a>
-              <a href="#" className="social-link">Instagram</a>
+              <button type="button" className="social-link">LinkedIn</button>
+              <button type="button" className="social-link">Dribbble</button>
+              <button type="button" className="social-link">Behance</button>
+              <button type="button" className="social-link">Instagram</button>
             </div>
           </div>
         </div>
