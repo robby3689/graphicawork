@@ -110,7 +110,14 @@ function Contact() {
           <div className="social-links">
             <h3>Follow My Work</h3>
             <div className="social-icons">
-              <button type="button" className="social-link">LinkedIn</button>
+              <a
+                className="social-link"
+                href="https://www.linkedin.com/in/sachin-singh-31615432a/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
               <button type="button" className="social-link">Dribbble</button>
               <button type="button" className="social-link">Behance</button>
               <button type="button" className="social-link">Instagram</button>

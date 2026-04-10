@@ -13,7 +13,15 @@ function Footer() {
             visual solutions that help businesses build strong brand presence.
           </p>
           <div className="footer-social">
-            <button type="button" className="social-icon" aria-label="LinkedIn">📱</button>
+            <a
+              className="social-icon"
+              href="https://www.linkedin.com/in/sachin-singh-31615432a/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              📱
+            </a>
             <button type="button" className="social-icon" aria-label="Dribbble">🎨</button>
             <button type="button" className="social-icon" aria-label="Behance">📊</button>
             <button type="button" className="social-icon" aria-label="Instagram">📸</button>
