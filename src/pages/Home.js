@@ -6,31 +6,31 @@ const services = [
   {
     title: 'Brand Identity Design',
     description: 'Complete brand systems including logos, color palettes, typography, and visual guidelines that tell your unique story.',
-    icon: '🎨',
+    icon: 'B',
     features: ['Logo Design', 'Brand Guidelines', 'Visual Identity', 'Style Guides']
   },
   {
     title: 'Digital Design',
     description: 'Modern websites, mobile apps, and digital experiences that engage users and drive conversions.',
-    icon: '💻',
+    icon: 'D',
     features: ['Web Design', 'UI/UX Design', 'Mobile Apps', 'E-commerce']
   },
   {
-    title: 'Print & Packaging',
-    description: 'Professional print materials and packaging solutions that make your brand stand out on shelves.',
-    icon: '📦',
-    features: ['Business Cards', 'Packaging Design', 'Marketing Materials', 'Signage']
+    title: 'Print Design',
+    description: 'Print and design for tshirts, merchandise, stickers, banners, packaging, and other branded materials that help your business stand out.',
+    icon: 'P',
+    features: ['T-shirts', 'Merchandise', 'Stickers', 'Banners']
   },
   {
     title: 'Creative Strategy',
     description: 'Strategic design thinking and creative direction to align your visual identity with business goals.',
-    icon: '🚀',
+    icon: 'S',
     features: ['Brand Strategy', 'Creative Direction', 'Market Research', 'Design Systems']
   }
 ];
 
 const stats = [
-  { number: '150+', label: 'Projects Completed' },
+  { number: '25+', label: 'Projects Completed' },
   { number: '50+', label: 'Happy Clients' },
   { number: '5+', label: 'Years Experience' },
   { number: '100%', label: 'Client Satisfaction' }
@@ -47,7 +47,7 @@ function Home() {
         <div className="container">
           <div className="hero-content">
             <div className="hero-badge">
-              <span>🎨 Creative Design Studio</span>
+              <span>Creative Design Studio</span>
             </div>
             <h1 className="hero-title">
               We Create

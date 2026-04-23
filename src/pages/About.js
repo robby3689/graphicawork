@@ -33,9 +33,9 @@ function About() {
                 }}
               />
               <div className="founder-placeholder" style={{display: 'none'}}>
-                <div className="placeholder-icon">👤</div>
+                <div className="placeholder-icon">GW</div>
                 <p>Founder Image Placeholder</p>
-                <small>Replace with your AI-generated image</small>
+                <small>Replace with your founder image</small>
               </div>
             </div>
           </div>
@@ -51,7 +51,7 @@ function About() {
             <div className="founder-credentials">
               <div className="credential-item">
                 <span className="credential-label">Experience:</span>
-                <span className="credential-value">5+ Years in Design</span>
+                <span className="credential-value">5+ Years in Design & Development</span>
               </div>
               <div className="credential-item">
                 <span className="credential-label">Specialty:</span>

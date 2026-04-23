@@ -1,0 +1,29 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="64" y1="64" x2="448" y2="448" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f3f7fb"/>
+    </linearGradient>
+    <linearGradient id="markGradient" x1="128" y1="132" x2="384" y2="380" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0f766e"/>
+      <stop offset="55%" stop-color="#124a7a"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="24" y="24" width="464" height="464" rx="104" fill="url(#bgGradient)"/>
+  <rect x="24.75" y="24.75" width="462.5" height="462.5" rx="103.25" stroke="#d9e4ef" stroke-width="1.5"/>
+
+  <text
+    x="256"
+    y="308"
+    text-anchor="middle"
+    fill="url(#markGradient)"
+    font-family="Manrope, Sora, Arial, sans-serif"
+    font-size="240"
+    font-weight="800"
+    letter-spacing="-24"
+  >
+    GW
+  </text>
+</svg>

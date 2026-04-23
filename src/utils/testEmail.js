@@ -12,20 +12,20 @@ export const testEmailSetup = async () => {
       to_email: 'sachin@graphicawork.xyz'
     };
 
-    console.log('🧪 Testing email setup...');
-    console.log('📧 Test parameters:', testParams);
+    console.log('Testing email setup...');
+    console.log('Test parameters:', testParams);
     
     // You can call this function from browser console to test
     return testParams;
   } catch (error) {
-    console.error('❌ Test failed:', error);
+    console.error('Test failed:', error);
     return null;
   }
 };
 
 // Instructions for testing:
 export const testInstructions = `
-🧪 HOW TO TEST YOUR EMAIL SETUP:
+HOW TO TEST YOUR EMAIL SETUP:
 
 1. Open your website in browser
 2. Open Developer Tools (F12)
@@ -34,10 +34,10 @@ export const testInstructions = `
 5. Press Enter
 6. Check your GoDaddy email inbox
 
-📧 Expected Result:
+Expected Result:
 You should receive a test email at sachin@graphicawork.xyz
 
-🔧 If no email arrives:
+If no email arrives:
 - Check spam folder
 - Verify EmailJS configuration
 - Check GoDaddy email settings

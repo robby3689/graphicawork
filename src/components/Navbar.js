@@ -1,15 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import Logo from './Logo';
-import LogoAlt from './LogoAlt';
-import LogoModern from './LogoModern';
-import LogoSimple from './LogoSimple';
 import './Navbar.css';
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [currentLogo] = useState('simple');
   const location = useLocation();
 
   useEffect(() => {
@@ -33,28 +28,15 @@ function Navbar() {
     return location.pathname === path;
   };
 
-  const getLogoComponent = () => {
-    switch (currentLogo) {
-      case 'minimal':
-        return <LogoAlt size={40} className="logo-svg" />;
-      case 'modern':
-        return <LogoModern size={40} className="logo-svg" />;
-      case 'simple':
-        return <LogoSimple size={40} className="logo-svg" />;
-      default:
-        return <Logo size={40} className="logo-svg" />;
-    }
-  };
-
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <Link to="/" className="logo-container" onClick={closeMobileMenu}>
-        {getLogoComponent()}
+        <img src="/brand-mark.svg" alt="Graphica Work" className="logo-svg" />
         <span className="logo-text">Graphica Work</span>
       </Link>
       
       <button className="mobile-menu-btn" onClick={toggleMobileMenu}>
-        {isMobileMenuOpen ? '✕' : '☰'}
+        {isMobileMenuOpen ? 'Close' : 'Menu'}
       </button>
       
       <ul className={isMobileMenuOpen ? 'open' : ''}>

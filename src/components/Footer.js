@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom';
 import './Footer.css';
 
 function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <footer className="footer">
       <div className="footer-content">
@@ -15,16 +19,13 @@ function Footer() {
           <div className="footer-social">
             <a
               className="social-icon"
-              href="https://www.linkedin.com/in/sachin-singh-31615432a/"
+              href="https://www.instagram.com/wgraphica/"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="LinkedIn"
+              aria-label="Instagram"
             >
-              📱
+              ig
             </a>
-            <button type="button" className="social-icon" aria-label="Dribbble">🎨</button>
-            <button type="button" className="social-icon" aria-label="Behance">📊</button>
-            <button type="button" className="social-icon" aria-label="Instagram">📸</button>
           </div>
         </div>
 
@@ -42,7 +43,7 @@ function Footer() {
         <div className="footer-section">
           <h3>Quick Links</h3>
           <ul className="footer-links">
-            <li><Link to="/">Home</Link></li>
+            <li><Link to="/" onClick={scrollToTop}>Home</Link></li>
             <li><Link to="/about">About</Link></li>
             <li><Link to="/projects">Projects</Link></li>
             <li><Link to="/contact">Contact</Link></li>

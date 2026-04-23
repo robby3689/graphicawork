@@ -1,55 +1,58 @@
 /* Import Premium Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap');
 
 /* Premium CSS Variables */
 :root {
   /* Primary Brand Colors */
-  --primary-green: #00d4aa;
-  --primary-green-dark: #00b894;
-  --primary-green-light: #00f5d4;
-  --accent-purple: #6366f1;
-  --accent-blue: #3b82f6;
+  --primary-green: #0f766e;
+  --primary-green-dark: #115e59;
+  --primary-green-light: #5eead4;
+  --accent-blue: #1d4ed8;
   --accent-orange: #f59e0b;
+  --accent-coral: #f97316;
   
-  /* Sophisticated Grays */
-  --black: #0a0a0a;
-  --dark-gray: #111111;
-  --medium-gray: #1a1a1a;
-  --light-gray: #2a2a2a;
-  --lighter-gray: #3a3a3a;
-  --card-bg: #1f1f1f;
-  --section-bg: #151515;
+  /* Light Neutrals */
+  --black: #111827;
+  --dark-gray: #cbd5e1;
+  --medium-gray: #f1f5f9;
+  --light-gray: #e2e8f0;
+  --lighter-gray: #f8fafc;
+  --card-bg: #ffffff;
+  --section-bg: #f7f9fc;
+  --bg-primary: #f7f9fc;
+  --bg-secondary: #ffffff;
   
   /* Text Colors */
-  --text-primary: #ffffff;
-  --text-secondary: #e5e7eb;
-  --text-muted: #9ca3af;
-  --text-accent: #00d4aa;
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-muted: #64748b;
+  --text-accent: #0f766e;
   
   /* Premium Shadows */
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-  --shadow-xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  --shadow-green: 0 10px 25px -3px rgba(0, 212, 170, 0.3);
-  --shadow-purple: 0 10px 25px -3px rgba(99, 102, 241, 0.3);
+  --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.06);
+  --shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  --shadow-md: 0 14px 28px rgba(15, 23, 42, 0.1);
+  --shadow-lg: 0 20px 36px rgba(15, 23, 42, 0.12);
+  --shadow-xl: 0 28px 48px rgba(15, 23, 42, 0.14);
+  --shadow-hover: 0 20px 36px rgba(15, 118, 110, 0.2);
+  --shadow-accent: 0 16px 32px rgba(29, 78, 216, 0.15);
+  --shadow-green: 0 14px 30px rgba(15, 118, 110, 0.24);
   
   /* Gradients */
-  --gradient-primary: linear-gradient(135deg, #00d4aa 0%, #00b894 100%);
-  --gradient-secondary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
-  --gradient-dark: linear-gradient(135deg, #111111 0%, #1a1a1a 100%);
-  --gradient-hero: linear-gradient(135deg, #0a0a0a 0%, #111111 50%, #1a1a1a 100%);
+  --gradient-primary: linear-gradient(135deg, #0f766e 0%, #1d4ed8 100%);
+  --gradient-secondary: linear-gradient(135deg, #ccfbf1 0%, #dbeafe 100%);
+  --gradient-dark: linear-gradient(135deg, #dbeafe 0%, #e2e8f0 100%);
+  --gradient-hero: linear-gradient(145deg, #fefefe 0%, #edf4ff 52%, #f1f5f9 100%);
   
   /* Typography */
-  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-display: 'Playfair Display', serif;
+  --font-primary: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-display: 'Sora', sans-serif;
   
   /* Spacing */
-  --section-padding: 120px 0;
+  --section-padding: 100px 0;
   --container-padding: 0 2rem;
-  --border-radius: 12px;
-  --border-radius-lg: 20px;
+  --border-radius: 16px;
+  --border-radius-lg: 24px;
   --border-radius-xl: 32px;
 }
 
@@ -61,11 +64,21 @@
 
 body {
   font-family: var(--font-primary);
-  background: var(--black);
+  background:
+    radial-gradient(circle at 12% 10%, rgba(29, 78, 216, 0.1) 0%, rgba(29, 78, 216, 0) 38%),
+    radial-gradient(circle at 85% 15%, rgba(245, 158, 11, 0.1) 0%, rgba(245, 158, 11, 0) 34%),
+    radial-gradient(circle at 50% 100%, rgba(15, 118, 110, 0.08) 0%, rgba(15, 118, 110, 0) 45%),
+    var(--section-bg);
   color: var(--text-primary);
-  line-height: 1.7;
+  line-height: 1.75;
+  font-size: 16.5px;
   overflow-x: hidden;
   font-weight: 400;
+}
+
+html,
+#root {
+  background: var(--section-bg);
 }
 
 /* Smooth scrolling */
@@ -83,7 +96,7 @@ html {
   border-radius: var(--border-radius);
   text-decoration: none;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 16px;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   border: none;
   cursor: pointer;
@@ -111,18 +124,18 @@ html {
 
 .btn-primary {
   background: var(--gradient-primary);
-  color: var(--black);
+  color: #ffffff;
   box-shadow: var(--shadow-green);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 20px 40px -10px rgba(0, 212, 170, 0.4);
+  box-shadow: var(--shadow-accent);
 }
 
 .btn-secondary {
   background: transparent;
-  color: var(--text-primary);
+  color: var(--accent-blue);
   border: 2px solid var(--primary-green);
   position: relative;
   overflow: hidden;
@@ -141,9 +154,9 @@ html {
 }
 
 .btn-secondary:hover {
-  color: var(--black);
+  color: #ffffff;
   transform: translateY(-2px);
-  box-shadow: var(--shadow-green);
+  box-shadow: var(--shadow-accent);
 }
 
 .btn-secondary:hover::after {
@@ -151,9 +164,9 @@ html {
 }
 
 .btn-tertiary {
-  background: var(--light-gray);
+  background: var(--bg-secondary);
   color: var(--text-secondary);
-  border: 1px solid var(--lighter-gray);
+  border: 1px solid var(--light-gray);
 }
 
 .btn-tertiary:hover {
@@ -165,7 +178,7 @@ html {
 
 .btn-large {
   padding: 20px 40px;
-  font-size: 16px;
+  font-size: 17px;
   border-radius: var(--border-radius-lg);
 }
 
@@ -190,7 +203,7 @@ html {
   padding: 16px 20px;
   border-radius: var(--border-radius);
   border: 2px solid var(--light-gray);
-  background: var(--card-bg);
+  background: var(--bg-secondary);
   color: var(--text-primary);
   font-size: 16px;
   font-family: var(--font-primary);
@@ -202,8 +215,8 @@ html {
 .form-textarea:focus {
   outline: none;
   border-color: var(--primary-green);
-  box-shadow: 0 0 0 4px rgba(0, 212, 170, 0.1);
-  background: var(--medium-gray);
+  box-shadow: 0 0 0 4px rgba(15, 118, 110, 0.14);
+  background: #ffffff;
 }
 
 .form-input::placeholder,
@@ -219,7 +232,7 @@ html {
 
 .section-title {
   font-family: var(--font-display);
-  font-size: 3.5rem;
+  font-size: 3.25rem;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1.5rem;
@@ -231,7 +244,7 @@ html {
 }
 
 .section-subtitle {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   color: var(--text-secondary);
   text-align: center;
   margin-bottom: 4rem;

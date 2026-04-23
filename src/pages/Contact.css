@@ -1,13 +1,13 @@
 .contact-page {
   padding-top: 80px; /* Account for fixed navbar */
   min-height: 100vh;
-  background: linear-gradient(135deg, var(--section-bg) 0%, var(--dark-gray) 100%);
+  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--section-bg) 100%);
 }
 
 .contact-hero {
   padding: 100px 20px 60px;
   text-align: center;
-  background: linear-gradient(135deg, var(--section-bg) 0%, var(--dark-gray) 100%);
+  background: linear-gradient(135deg, #ffffff 0%, var(--section-bg) 100%);
   position: relative;
   overflow: hidden;
 }
@@ -19,7 +19,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 30% 20%, rgba(0, 255, 136, 0.15) 0%, transparent 50%);
+  background: radial-gradient(circle at 30% 20%, rgba(15, 118, 110, 0.14) 0%, transparent 50%);
   pointer-events: none;
 }
 
@@ -109,7 +109,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 255, 136, 0.15);
+  background: rgba(14, 165, 233, 0.12);
   border-radius: 12px;
 }
 
@@ -209,7 +209,7 @@
 .form-group textarea:focus {
   outline: none;
   border-color: var(--primary-green);
-  box-shadow: 0 0 0 3px rgba(0, 255, 136, 0.1);
+  box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.12);
 }
 
 .form-group input::placeholder,
@@ -219,7 +219,7 @@
 
 .submit-btn {
   background: var(--primary-green);
-  color: var(--black);
+  color: #ffffff;
   border: none;
   padding: 16px 32px;
   border-radius: 8px;
@@ -231,7 +231,7 @@
 }
 
 .submit-btn:hover:not(:disabled) {
-  background: var(--dark-green);
+  background: var(--primary-green-dark);
   transform: translateY(-2px);
   box-shadow: var(--shadow-hover);
 }
@@ -242,7 +242,7 @@
 }
 
 .success-message {
-  background: rgba(0, 255, 136, 0.15);
+  background: rgba(15, 118, 110, 0.12);
   color: var(--primary-green);
   padding: 1rem;
   border-radius: 8px;
@@ -253,11 +253,11 @@
 }
 
 .error-message {
-  background: rgba(255, 0, 0, 0.15);
-  color: #ff4444;
+  background: rgba(220, 38, 38, 0.1);
+  color: #b91c1c;
   padding: 1rem;
   border-radius: 8px;
-  border: 1px solid #ff4444;
+  border: 1px solid #dc2626;
   text-align: center;
   margin-top: 1rem;
   font-weight: 500;

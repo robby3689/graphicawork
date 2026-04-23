@@ -83,7 +83,7 @@ function Contact() {
           
           <div className="contact-methods">
             <div className="contact-method">
-              <div className="contact-icon">📧</div>
+              <div className="contact-icon">@</div>
               <div>
                 <h3>Email</h3>
                 <p>sachin@graphicawork.xyz</p>
@@ -91,15 +91,15 @@ function Contact() {
             </div>
             
             <div className="contact-method">
-              <div className="contact-icon">📱</div>
+              <div className="contact-icon">ph</div>
               <div>
                 <h3>Phone</h3>
-                <p>+1 (555) 123-4567</p>
+                <p>+917426882205</p>
               </div>
             </div>
             
             <div className="contact-method">
-              <div className="contact-icon">📍</div>
+              <div className="contact-icon">loc</div>
               <div>
                 <h3>Location</h3>
                 <p>Toronto, Ontario, Canada</p>
@@ -112,15 +112,12 @@ function Contact() {
             <div className="social-icons">
               <a
                 className="social-link"
-                href="https://www.linkedin.com/in/sachin-singh-31615432a/"
+                href="https://www.instagram.com/wgraphica/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                LinkedIn
+                Instagram
               </a>
-              <button type="button" className="social-link">Dribbble</button>
-              <button type="button" className="social-link">Behance</button>
-              <button type="button" className="social-link">Instagram</button>
             </div>
           </div>
         </div>
@@ -189,13 +186,13 @@ function Contact() {
 
             {submitStatus === 'success' && (
               <div className="success-message">
-                ✅ Thank you! Your message has been sent successfully. I'll get back to you soon.
+                Thank you! Your message has been sent successfully. I'll get back to you soon.
               </div>
             )}
             
             {submitStatus === 'error' && (
               <div className="error-message">
-                ❌ Sorry, there was an error sending your message. Please try again or contact me directly at sachin@graphicawork.xyz
+                Sorry, there was an error sending your message. Please try again or contact me directly at sachin@graphicawork.xyz
               </div>
             )}
           </form>

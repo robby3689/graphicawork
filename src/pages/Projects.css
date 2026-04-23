@@ -1,7 +1,7 @@
 .projects-page {
   padding-top: 80px; /* Account for fixed navbar */
   min-height: 100vh;
-  background: linear-gradient(135deg, var(--section-bg) 0%, var(--dark-gray) 100%);
+  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--section-bg) 100%);
 }
 
 .projects-page h1 {
@@ -9,7 +9,7 @@
   font-weight: 700;
   text-align: center;
   margin-bottom: 2rem;
-  padding: 100px 20px 50px;
+  padding: 64px 20px 36px;
   background: linear-gradient(135deg, var(--primary-green), var(--accent-blue));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -52,7 +52,7 @@
   transform: translateY(-8px);
   border-color: var(--primary-green);
   box-shadow: var(--shadow-hover);
-  background: var(--medium-gray);
+  background: var(--light-gray);
 }
 
 .project-card:hover::before {
@@ -82,7 +82,7 @@
 }
 
 .project-card .project-category {
-  background: rgba(0, 255, 136, 0.15);
+  background: rgba(14, 165, 233, 0.12);
   color: var(--primary-green);
   padding: 4px 12px;
   border-radius: 20px;
@@ -120,7 +120,7 @@
 .filter-btn:hover,
 .filter-btn.active {
   background: var(--primary-green);
-  color: var(--black);
+  color: #ffffff;
   border-color: var(--primary-green);
 }
 
@@ -131,7 +131,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(15, 23, 42, 0.55);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -214,7 +214,7 @@
 @media (max-width: 768px) {
   .projects-page h1 {
     font-size: 2.5rem;
-    padding: 80px 20px 40px;
+    padding: 56px 20px 32px;
   }
   
   .projects-grid {

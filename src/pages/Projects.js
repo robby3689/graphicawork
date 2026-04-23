@@ -90,7 +90,7 @@ function Projects() {
 
   return (
     <main className="projects-page">
-      <h1>My Projects</h1>
+      <h1>Our Projects</h1>
       
       <div className="projects-filters">
         {categories.map(category => (
