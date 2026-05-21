@@ -69,6 +69,15 @@ function Navbar() {
         </li>
         <li>
           <Link 
+            to="/canada-reset" 
+            className={isActive('/canada-reset') ? 'active' : ''} 
+            onClick={closeMobileMenu}
+          >
+            Canada Reset
+          </Link>
+        </li>
+        <li>
+          <Link 
             to="/contact" 
             className={isActive('/contact') ? 'active' : ''} 
             onClick={closeMobileMenu}

@@ -7,7 +7,7 @@
 .contact-hero {
   padding: 100px 20px 60px;
   text-align: center;
-  background: linear-gradient(135deg, #ffffff 0%, var(--section-bg) 100%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.02) 0%, var(--section-bg) 100%);
   position: relative;
   overflow: hidden;
 }
@@ -19,7 +19,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 30% 20%, rgba(15, 118, 110, 0.14) 0%, transparent 50%);
+  background: radial-gradient(circle at 30% 20%, rgba(182, 255, 77, 0.12) 0%, transparent 50%);
   pointer-events: none;
 }
 
@@ -27,7 +27,7 @@
   font-size: 3.5rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
-  background: linear-gradient(135deg, var(--primary-green), var(--accent-blue));
+  background: linear-gradient(135deg, var(--primary-green), var(--accent-coral));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -65,7 +65,7 @@
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
-  background: linear-gradient(135deg, var(--primary-green), var(--accent-blue));
+  background: linear-gradient(135deg, var(--primary-green), var(--accent-coral));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -90,7 +90,7 @@
   align-items: center;
   gap: 1rem;
   padding: 1.5rem;
-  background: var(--medium-gray);
+  background: rgba(255, 255, 255, 0.03);
   border-radius: 12px;
   border: 1px solid var(--light-gray);
   transition: all 0.3s ease;
@@ -99,7 +99,7 @@
 .contact-method:hover {
   border-color: var(--primary-green);
   transform: translateX(5px);
-  background: var(--light-gray);
+  background: rgba(182, 255, 77, 0.05);
 }
 
 .contact-icon {
@@ -109,7 +109,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(14, 165, 233, 0.12);
+  background: rgba(182, 255, 77, 0.12);
   border-radius: 12px;
 }
 
@@ -141,7 +141,7 @@
 .social-link {
   display: inline-block;
   padding: 8px 16px;
-  background: var(--medium-gray);
+  background: rgba(255, 255, 255, 0.03);
   color: var(--text-secondary);
   text-decoration: none;
   border-radius: 20px;
@@ -198,7 +198,7 @@
   padding: 16px;
   border-radius: 8px;
   border: 1px solid var(--light-gray);
-  background: var(--medium-gray);
+  background: rgba(255, 255, 255, 0.03);
   color: var(--text-primary);
   font-size: 16px;
   transition: all 0.3s ease;
@@ -209,7 +209,7 @@
 .form-group textarea:focus {
   outline: none;
   border-color: var(--primary-green);
-  box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.12);
+  box-shadow: 0 0 0 3px rgba(182, 255, 77, 0.12);
 }
 
 .form-group input::placeholder,
@@ -219,7 +219,7 @@
 
 .submit-btn {
   background: var(--primary-green);
-  color: #ffffff;
+  color: #081009;
   border: none;
   padding: 16px 32px;
   border-radius: 8px;
@@ -242,7 +242,7 @@
 }
 
 .success-message {
-  background: rgba(15, 118, 110, 0.12);
+  background: rgba(182, 255, 77, 0.12);
   color: var(--primary-green);
   padding: 1rem;
   border-radius: 8px;

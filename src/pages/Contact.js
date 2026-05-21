@@ -79,7 +79,8 @@ function Contact() {
       <div className="contact-content">
         <div className="contact-info">
           <h2>Let's Connect</h2>
-          <p>I'm always excited to hear about new projects and opportunities. Whether you have a specific design need or just want to chat about possibilities, I'd love to hear from you.</p>
+          <p>I'm always excited to hear about new projects and opportunities. 
+            Whether you have a specific design need or just want to chat about possibilities, I'd love to hear from you.</p>
           
           <div className="contact-methods">
             <div className="contact-method">
