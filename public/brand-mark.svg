@@ -5,9 +5,9 @@
       <stop offset="100%" stop-color="#f3f7fb"/>
     </linearGradient>
     <linearGradient id="markGradient" x1="128" y1="132" x2="384" y2="380" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#0f766e"/>
-      <stop offset="55%" stop-color="#124a7a"/>
-      <stop offset="100%" stop-color="#1d4ed8"/>
+      <stop offset="0%" stop-color="#050607"/>
+      <stop offset="60%" stop-color="#08321a"/>
+      <stop offset="100%" stop-color="#b6ff4d"/>
     </linearGradient>
   </defs>
 
