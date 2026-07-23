@@ -1,34 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Dark Black Theme */
+/* Refined Dark Theme */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  background-color: #000000;
-  color: #ffffff;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  background-color: #0b1117;
+  color: #f5f7fa;
   line-height: 1.6;
+  text-rendering: optimizeLegibility;
 }
 
-/* Dark Black Theme Variables */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Refined Dark Theme Variables */
 :root {
-  --bg-primary: #000000;
-  --bg-secondary: #111111;
-  --bg-tertiary: #1a1a1a;
-  --bg-card: #0d0d0d;
-  --border: #333333;
-  --border-light: #444444;
-  --text-primary: #ffffff;
-  --text-secondary: #cccccc;
-  --text-tertiary: #999999;
-  --accent: #4f9cf9;
-  --accent-hover: #6bb6ff;
-  --accent-light: #7bc4ff;
-  --success: #00d4aa;
-  --warning: #ffb800;
-  --danger: #ff4757;
-  --gradient-primary: linear-gradient(135deg, #111111 0%, #1a1a1a 100%);
-  --gradient-accent: linear-gradient(135deg, #4f9cf9 0%, #6bb6ff 100%);
+  --bg-primary: #0b1117;
+  --bg-secondary: #101923;
+  --bg-tertiary: #172330;
+  --bg-card: #111b26;
+  --border: #243244;
+  --border-light: #334155;
+  --text-primary: #f8fafc;
+  --text-secondary: #c7d1dd;
+  --text-tertiary: #93a4b7;
+  --accent: #5eead4;
+  --accent-hover: #2dd4bf;
+  --accent-light: #99f6e4;
+  --success: #34d399;
+  --warning: #fbbf24;
+  --danger: #fb7185;
+  --gradient-primary: linear-gradient(135deg, #0f1720 0%, #172433 100%);
+  --gradient-accent: linear-gradient(135deg, #5eead4 0%, #38bdf8 100%);
+  --section-bg: #101923;
+  --dark-gray: #0f1720;
+  --card-bg: #111b26;
+  --medium-gray: #16212d;
+  --light-gray: #243244;
+  --text-muted: #93a4b7;
+  --primary-green: #5eead4;
+  --primary-green-dark: #2dd4bf;
+  --accent-blue: #38bdf8;
+  --black: #081018;
+  --shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
+  --shadow-hover: 0 28px 72px rgba(8, 16, 24, 0.34);
+  --shadow-xl: 0 32px 90px rgba(0, 0, 0, 0.38);
+  --shadow-lg: 0 24px 60px rgba(0, 0, 0, 0.3);
+  --gradient-hero: linear-gradient(180deg, #0f1720 0%, #101923 100%);
+  --gradient-dark: linear-gradient(135deg, #0b1117 0%, #111b26 100%);
+  --section-padding: clamp(4rem, 8vw, 7rem);
+  --border-radius-lg: 24px;
+  --font-display: 'Space Grotesk', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 /* Custom scrollbar */
@@ -59,13 +85,69 @@ code {
   color: var(--accent-light);
 }
 
-/* Smooth transitions */
-* {
-  transition: all 0.2s ease;
+body {
+  background-image:
+    radial-gradient(circle at top left, rgba(94, 234, 212, 0.08), transparent 30%),
+    radial-gradient(circle at top right, rgba(56, 189, 248, 0.08), transparent 26%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent 26%);
+  background-attachment: fixed;
+}
+
+/* Motion helpers */
+.motion-safe * {
+  transition-property: color, background-color, border-color, transform, box-shadow, opacity;
+  transition-duration: 220ms;
+  transition-timing-function: ease;
+}
+
+.fade-in-up {
+  animation: fadeInUp 700ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.float-slow {
+  animation: float 6s ease-in-out infinite;
+}
+
+.pulse-soft {
+  animation: pulseSoft 4.5s ease-in-out infinite;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulseSoft {
+  0%,
+  100% {
+    opacity: 0.75;
+  }
+
+  50% {
+    opacity: 1;
+  }
 }
 
 /* Focus styles */
 *:focus {
-  outline: 2px solid var(--accent);
+  outline: 2px solid var(--accent-light);
   outline-offset: 2px;
 }

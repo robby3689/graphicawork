@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import LogoImproved from './LogoImproved';
+import Logo from './Logo';
 import './Footer.css';
 
 function Footer() {
@@ -15,7 +15,7 @@ function Footer() {
           {/* Logo Section */}
           <div className="footer-logo">
             <div className="flex items-center gap-3 mb-4">
-              <LogoImproved size={32} />
+              <Logo size={32} />
               <h2 style={{ color: 'var(--text-primary)', fontSize: '1.25rem', fontWeight: '600' }}>Graphica Work</h2>
             </div>
             <p style={{ color: 'var(--text-secondary)', fontSize: '0.875rem' }}>Design that speaks. Brands that connect.</p>

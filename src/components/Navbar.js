@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import LogoImproved from './LogoImproved';
+import Logo from './Logo';
 import './Navbar.css';
 
 function Navbar() {
   return (
     <nav className="navbar">
       <Link to="/" className="logo-container">
-        <LogoImproved size={32} className="logo-img" />
+        <Logo size={32} className="logo-img" />
         <span className="logo-text">Graphica Work</span>
       </Link>
       <ul>
