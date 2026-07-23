@@ -2,10 +2,6 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-// src/pages/Home.js
-
-import React from 'react';
-import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -68,12 +64,12 @@ const Home = () => {
                   color: 'var(--text-primary)'
                 }}
                 onMouseEnter={(e) => {
-                  e.target.style.borderColor = 'var(--accent)';
-                  e.target.style.boxShadow = '0 20px 40px rgba(79, 156, 249, 0.2)';
+                  e.currentTarget.style.borderColor = 'var(--accent)';
+                  e.currentTarget.style.boxShadow = '0 20px 40px rgba(79, 156, 249, 0.2)';
                 }}
                 onMouseLeave={(e) => {
-                  e.target.style.borderColor = 'var(--border)';
-                  e.target.style.boxShadow = 'none';
+                  e.currentTarget.style.borderColor = 'var(--border)';
+                  e.currentTarget.style.boxShadow = 'none';
                 }}
               >
                 <div className="text-xl font-semibold tracking-wide uppercase mb-6 group-hover:scale-110 transition-transform duration-300">{service.icon}</div>
@@ -113,4 +109,3 @@ const Home = () => {
 };
 
 export default Home;
-    </div>
