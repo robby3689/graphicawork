@@ -1,283 +1,120 @@
+// src/pages/Home.js
+
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Home.css';
 
-const services = [
-  {
-    title: 'Brand Identity Design',
-    description: 'Complete brand systems including logos, color palettes, typography, and visual guidelines that tell your unique story.',
-    icon: 'B',
-    features: ['Logo Design', 'Brand Guidelines', 'Visual Identity', 'Style Guides']
-  },
-  {
-    title: 'Digital Design',
-    description: 'Modern websites, mobile apps, and digital experiences that engage users and drive conversions.',
-    icon: 'D',
-    features: ['Web Design', 'UI/UX Design', 'Mobile Apps', 'E-commerce']
-  },
-  {
-    title: 'Print Design',
-    description: 'Print and design for tshirts, merchandise, stickers, banners, packaging, and other branded materials that help your business stand out.',
-    icon: 'P',
-    features: ['T-shirts', 'Merchandise', 'Stickers', 'Banners']
-  },
-  {
-    title: 'Creative Strategy',
-    description: 'Strategic design thinking and creative direction to align your visual identity with business goals.',
-    icon: 'S',
-    features: ['Brand Strategy', 'Creative Direction', 'Market Research', 'Design Systems']
-  }
-];
-
-const stats = [
-  { number: '25+', label: 'Projects Completed' },
-  { number: '50+', label: 'Happy Clients' },
-  { number: '5+', label: 'Years Experience' },
-  { number: '100%', label: 'Client Satisfaction' }
-];
-
-function Home() {
+const Home = () => {
   return (
-    <main className="home">
-      {/* Hero Section */}
-      <section className="hero-section">
-        <div className="hero-background">
-          <div className="hero-particles"></div>
-        </div>
-        <div className="container">
-          <div className="hero-content">
-            <div className="hero-badge">
-              <span>Creative Design Studio</span>
-            </div>
-            <h1 className="hero-title">
-              We Create
-              <span className="gradient-text"> Exceptional</span>
-              <br />
-              Brand Experiences
-            </h1>
-            <p className="hero-description">
-              Transform your business with strategic design that captivates, converts, and creates lasting impressions. 
-              We craft visual identities that tell your story and drive real results.
-            </p>
-            <div className="hero-buttons">
-              <Link to="/projects" className="btn btn-primary btn-large">
-                View Our Work
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M5 12h14M12 5l7 7-7 7"/>
-                </svg>
-              </Link>
-              <Link to="/contact" className="btn btn-secondary btn-large">
-                Start Your Project
-              </Link>
-            </div>
-            <div className="hero-stats">
-              {stats.map((stat, index) => (
-                <div key={index} className="stat-item">
-                  <div className="stat-number">{stat.number}</div>
-                  <div className="stat-label">{stat.label}</div>
-                </div>
-              ))}
-            </div>
+    <div className="min-h-screen" style={{ backgroundColor: 'var(--bg-primary)', color: 'var(--text-primary)' }}>
+      {/* Hero Section - Dark Black Theme */}
+      <section className="py-24 px-4 text-center relative overflow-hidden" style={{ backgroundColor: 'var(--bg-primary)' }}>
+        {/* Background gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-900/30 via-transparent to-gray-800/30"></div>
+        <div className="relative z-10 max-w-5xl mx-auto">
+          <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight" style={{ color: 'var(--text-primary)' }}>
+            Elevating Brands Through <span style={{ color: 'var(--accent)', background: 'var(--gradient-accent)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Creative Design</span>
+          </h1>
+          <p className="text-xl md:text-2xl mb-12 max-w-4xl mx-auto leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
+            We craft bold brand identities, custom logos, and modern websites that make your business stand out — and stay remembered.
+          </p>
+          <div className="flex justify-center gap-6 mt-12 flex-wrap">
+            <Link
+              to="/projects"
+              className="btn"
+            >
+              Start a Project
+            </Link>
+            <Link
+              to="/about"
+              className="btn-secondary"
+            >
+              Learn More
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Services Section */}
-      <section className="services-section">
-        <div className="container">
-          <div className="section-header">
-            <h2 className="section-title">Our Expertise</h2>
-            <p className="section-subtitle">
-              We specialize in creating comprehensive design solutions that elevate your brand 
-              and connect with your audience on every level.
-            </p>
-          </div>
-          <div className="services-grid">
-            {services.map((service, index) => (
-              <div key={index} className="service-card fade-in" style={{animationDelay: `${index * 0.1}s`}}>
-                <div className="service-icon">{service.icon}</div>
-                <h3 className="service-title">{service.title}</h3>
-                <p className="service-description">{service.description}</p>
-                <ul className="service-features">
-                  {service.features.map((feature, featureIndex) => (
-                    <li key={featureIndex}>{feature}</li>
-                  ))}
-                </ul>
-                <div className="service-cta">
-                  <Link to="/contact" className="btn btn-tertiary">
-                    Learn More
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <path d="M5 12h14M12 5l7 7-7 7"/>
-                    </svg>
-                  </Link>
-                </div>
+      {/* Services Section - Dark Black Cards */}
+      <section className="py-24 px-6" style={{ backgroundColor: 'var(--bg-secondary)' }}>
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16" style={{ color: 'var(--text-primary)' }}>Our Services</h2>
+          <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              {
+                title: 'Logo Design',
+                desc: "Custom logos tailored to your brand's story and personality.",
+                icon: '🎨'
+              },
+              {
+                title: 'Website Design',
+                desc: 'Modern, responsive websites that showcase your brand professionally.',
+                icon: '💻'
+              },
+              {
+                title: 'Brand Identity',
+                desc: 'Color palettes, typography, and systems to make your brand cohesive.',
+                icon: '🎯'
+              },
+              {
+                title: 'Packaging & Print',
+                desc: 'Flyers, business cards, and print-ready designs that align with your brand.',
+                icon: '📄'
+              },
+            ].map((service, idx) => (
+              <div
+                key={idx}
+                className="p-8 rounded-2xl border-2 transition-all duration-300 hover:transform hover:scale-105 hover:shadow-2xl group"
+                style={{ 
+                  backgroundColor: 'var(--bg-card)',
+                  borderColor: 'var(--border)',
+                  color: 'var(--text-primary)'
+                }}
+                onMouseEnter={(e) => {
+                  e.target.style.borderColor = 'var(--accent)';
+                  e.target.style.boxShadow = '0 20px 40px rgba(79, 156, 249, 0.2)';
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.borderColor = 'var(--border)';
+                  e.target.style.boxShadow = 'none';
+                }}
+              >
+                <div className="text-4xl mb-6 group-hover:scale-110 transition-transform duration-300">{service.icon}</div>
+                <h3 className="text-2xl font-bold mb-4" style={{ color: 'var(--text-primary)' }}>{service.title}</h3>
+                <p className="text-base leading-relaxed" style={{ color: 'var(--text-secondary)' }}>{service.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Process Section */}
-      <section className="process-section">
-        <div className="container">
-          <div className="section-header">
-            <h2 className="section-title">Our Design Process</h2>
-            <p className="section-subtitle">
-              A proven methodology that ensures every project delivers exceptional results 
-              and exceeds your expectations.
-            </p>
-          </div>
-          <div className="process-steps">
-            <div className="process-step fade-in-left">
-              <div className="step-number">01</div>
-              <h3>Discovery & Strategy</h3>
-              <p>We dive deep into your business, audience, and goals to create a strategic foundation for your design.</p>
-            </div>
-            <div className="process-step fade-in-left" style={{animationDelay: '0.2s'}}>
-              <div className="step-number">02</div>
-              <h3>Concept & Design</h3>
-              <p>Our creative team develops unique concepts and designs that align with your brand strategy.</p>
-            </div>
-            <div className="process-step fade-in-left" style={{animationDelay: '0.4s'}}>
-              <div className="step-number">03</div>
-              <h3>Refinement</h3>
-              <p>We collaborate with you to refine and perfect every detail until it's exactly right.</p>
-            </div>
-            <div className="process-step fade-in-left" style={{animationDelay: '0.6s'}}>
-              <div className="step-number">04</div>
-              <h3>Delivery & Launch</h3>
-              <p>Final files are delivered with comprehensive guidelines for consistent brand implementation.</p>
-            </div>
-          </div>
+      {/* Featured Projects - Dark Black Theme */}
+      <section className="py-24 px-4 text-center relative" style={{ backgroundColor: 'var(--bg-primary)' }}>
+        <div className="absolute inset-0 bg-gradient-to-t from-gray-900/20 via-transparent to-gray-800/20"></div>
+        <div className="relative z-10 max-w-5xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8" style={{ color: 'var(--text-primary)' }}>Featured Projects</h2>
+          <p className="text-xl mb-12 max-w-3xl mx-auto leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
+            See how we've helped businesses stand out visually with our creative design solutions.
+          </p>
+          <Link
+            to="/projects"
+            className="btn"
+          >
+            Browse Projects
+          </Link>
         </div>
       </section>
 
-      {/* Featured Work */}
-      <section className="featured-work-section">
-        <div className="container">
-          <div className="section-header">
-            <h2 className="section-title">Featured Projects</h2>
-            <p className="section-subtitle">
-              Explore our latest work and see how we've helped businesses transform their visual identity.
-            </p>
-          </div>
-          <div className="featured-grid">
-            <div className="featured-item fade-in">
-              <div className="featured-image">
-                <div className="image-placeholder"></div>
-              </div>
-              <div className="featured-content">
-                <h3>EcoTech Brand Identity</h3>
-                <p>Complete brand redesign for a sustainable technology company</p>
-                <span className="project-category">Brand Identity</span>
-              </div>
-            </div>
-            <div className="featured-item fade-in" style={{animationDelay: '0.2s'}}>
-              <div className="featured-image">
-                <div className="image-placeholder"></div>
-              </div>
-              <div className="featured-content">
-                <h3>Luxe Restaurant Website</h3>
-                <p>Elegant website design for a premium dining experience</p>
-                <span className="project-category">Web Design</span>
-              </div>
-            </div>
-            <div className="featured-item fade-in" style={{animationDelay: '0.4s'}}>
-              <div className="featured-image">
-                <div className="image-placeholder"></div>
-              </div>
-              <div className="featured-content">
-                <h3>Fitness App UI/UX</h3>
-                <p>Mobile app design for a comprehensive fitness platform</p>
-                <span className="project-category">UI/UX Design</span>
-              </div>
-            </div>
-          </div>
-          <div className="featured-cta">
-            <Link to="/projects" className="btn btn-secondary btn-large">
-              View All Projects
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M5 12h14M12 5l7 7-7 7"/>
-              </svg>
-            </Link>
-          </div>
+      {/* About Section - Dark Black Theme */}
+      <section className="py-24 px-4 text-center border-t" style={{ backgroundColor: 'var(--bg-secondary)', borderColor: 'var(--border)' }}>
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8" style={{ color: 'var(--text-primary)' }}>About Graphica Work</h2>
+          <p className="text-xl leading-relaxed max-w-4xl mx-auto" style={{ color: 'var(--text-secondary)' }}>
+            Graphica Work is a creative studio based in Canada. We believe that design should do more than look good — it should connect, inspire, and deliver results. Our work is thoughtful, strategic, and built to elevate your brand.
+          </p>
         </div>
       </section>
-
-      {/* Testimonials */}
-      <section className="testimonials-section">
-        <div className="container">
-          <div className="section-header">
-            <h2 className="section-title">What Our Clients Say</h2>
-            <p className="section-subtitle">
-              Don't just take our word for it. Here's what our clients have to say about working with us.
-            </p>
-          </div>
-          <div className="testimonials-grid">
-            <div className="testimonial-card fade-in">
-              <div className="testimonial-content">
-                <p>"Graphica Work transformed our brand completely. Their strategic approach and creative vision helped us stand out in a crowded market."</p>
-              </div>
-              <div className="testimonial-author">
-                <div className="author-info">
-                  <h4>Sarah Johnson</h4>
-                  <span>CEO, TechStart Inc.</span>
-                </div>
-              </div>
-            </div>
-            <div className="testimonial-card fade-in" style={{animationDelay: '0.2s'}}>
-              <div className="testimonial-content">
-                <p>"The team at Graphica Work is incredibly talented and professional. They delivered exactly what we envisioned and more."</p>
-              </div>
-              <div className="testimonial-author">
-                <div className="author-info">
-                  <h4>Michael Chen</h4>
-                  <span>Founder, GreenEats</span>
-                </div>
-              </div>
-            </div>
-            <div className="testimonial-card fade-in" style={{animationDelay: '0.4s'}}>
-              <div className="testimonial-content">
-                <p>"Working with Graphica Work was a game-changer for our business. Their design expertise and attention to detail are unmatched."</p>
-              </div>
-              <div className="testimonial-author">
-                <div className="author-info">
-                  <h4>Emily Rodriguez</h4>
-                  <span>Marketing Director, LuxeCo</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="cta-section">
-        <div className="container">
-          <div className="cta-content">
-            <h2 className="cta-title">
-              Ready to Transform Your Brand?
-            </h2>
-            <p className="cta-description">
-              Let's create something extraordinary together. Your vision, our expertise, 
-              and a partnership that delivers results.
-            </p>
-            <div className="cta-buttons">
-              <Link to="/contact" className="btn btn-primary btn-large">
-                Start Your Project
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M5 12h14M12 5l7 7-7 7"/>
-                </svg>
-              </Link>
-              <Link to="/about" className="btn btn-secondary btn-large">
-                Learn About Us
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+    </div>
   );
-}
+};
 
 export default Home;

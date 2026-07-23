@@ -1,0 +1,68 @@
+.logo-selector {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid var(--light-gray);
+  margin: 2rem 0;
+}
+
+.logo-selector h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: var(--text-primary);
+}
+
+.logo-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+}
+
+.logo-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: var(--medium-gray);
+  border: 2px solid var(--light-gray);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.logo-option:hover {
+  border-color: var(--primary-green);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+  background: var(--light-gray);
+}
+
+.logo-option.selected {
+  border-color: var(--primary-green);
+  background: rgba(0, 255, 136, 0.15);
+  box-shadow: var(--shadow-hover);
+}
+
+.logo-option span {
+  font-weight: 500;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+}
+
+.logo-option.selected span {
+  color: var(--primary-green);
+}
+
+@media (max-width: 768px) {
+  .logo-options {
+    grid-template-columns: 1fr;
+  }
+  
+  .logo-option {
+    padding: 1rem;
+  }
+}
