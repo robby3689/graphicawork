@@ -2,7 +2,7 @@
 
 ## 📧 How to Set Up EmailJS for Your Contact Form
 
-Your contact form is now ready to send emails to `hello@graphicawork.xyz`! Follow these steps to complete the setup:
+Your contact form is now ready to send emails to `hello@graphicawork.online`! Follow these steps to complete the setup:
 
 ### Step 1: Create EmailJS Account
 1. Go to [https://www.emailjs.com/](https://www.emailjs.com/)
@@ -13,7 +13,7 @@ Your contact form is now ready to send emails to `hello@graphicawork.xyz`! Follo
 1. In your EmailJS dashboard, go to **"Email Services"**
 2. Click **"Add New Service"**
 3. Choose your email provider (Gmail, Outlook, etc.)
-4. Connect your `hello@graphicawork.xyz` email account
+4. Connect your `hello@graphicawork.online` email account
 5. Note down your **Service ID** (e.g., `service_abc123`)
 
 ### Step 3: Create Email Template
@@ -54,13 +54,13 @@ const publicKey = 'YOUR_PUBLIC_KEY';        // Replace with your Public Key
 2. Refresh your website
 3. Go to the Contact page
 4. Fill out and submit the form
-5. Check your `hello@graphicawork.xyz` email inbox!
+5. Check your `hello@graphicawork.online` email inbox!
 
 ## 🎯 What Happens When Someone Submits the Form:
 
 1. **User fills out the form** on your website
 2. **EmailJS sends the email** to your inbox
-3. **You receive the message** at `hello@graphicawork.xyz`
+3. **You receive the message** at `hello@graphicawork.online`
 4. **User sees success message** on the website
 
 ## 📋 Email Content You'll Receive:

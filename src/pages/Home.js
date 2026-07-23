@@ -2,6 +2,10 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+// src/pages/Home.js
+
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -18,16 +22,10 @@ const Home = () => {
             We craft bold brand identities, custom logos, and modern websites that make your business stand out — and stay remembered.
           </p>
           <div className="flex justify-center gap-6 mt-12 flex-wrap">
-            <Link
-              to="/projects"
-              className="btn"
-            >
+            <Link to="/projects" className="btn">
               Start a Project
             </Link>
-            <Link
-              to="/about"
-              className="btn-secondary"
-            >
+            <Link to="/about" className="btn-secondary">
               Learn More
             </Link>
           </div>
@@ -43,22 +41,22 @@ const Home = () => {
               {
                 title: 'Logo Design',
                 desc: "Custom logos tailored to your brand's story and personality.",
-                icon: '🎨'
+                icon: 'Logo'
               },
               {
                 title: 'Website Design',
                 desc: 'Modern, responsive websites that showcase your brand professionally.',
-                icon: '💻'
+                icon: 'Web'
               },
               {
                 title: 'Brand Identity',
                 desc: 'Color palettes, typography, and systems to make your brand cohesive.',
-                icon: '🎯'
+                icon: 'Brand'
               },
               {
                 title: 'Packaging & Print',
                 desc: 'Flyers, business cards, and print-ready designs that align with your brand.',
-                icon: '📄'
+                icon: 'Print'
               },
             ].map((service, idx) => (
               <div
@@ -78,7 +76,7 @@ const Home = () => {
                   e.target.style.boxShadow = 'none';
                 }}
               >
-                <div className="text-4xl mb-6 group-hover:scale-110 transition-transform duration-300">{service.icon}</div>
+                <div className="text-xl font-semibold tracking-wide uppercase mb-6 group-hover:scale-110 transition-transform duration-300">{service.icon}</div>
                 <h3 className="text-2xl font-bold mb-4" style={{ color: 'var(--text-primary)' }}>{service.title}</h3>
                 <p className="text-base leading-relaxed" style={{ color: 'var(--text-secondary)' }}>{service.desc}</p>
               </div>
@@ -95,10 +93,7 @@ const Home = () => {
           <p className="text-xl mb-12 max-w-3xl mx-auto leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
             See how we've helped businesses stand out visually with our creative design solutions.
           </p>
-          <Link
-            to="/projects"
-            className="btn"
-          >
+          <Link to="/projects" className="btn">
             Browse Projects
           </Link>
         </div>
@@ -118,3 +113,4 @@ const Home = () => {
 };
 
 export default Home;
+    </div>

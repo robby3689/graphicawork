@@ -36,7 +36,7 @@ function Contact() {
         from_email: formData.email,
         subject: formData.subject || 'New Contact Form Submission',
         message: formData.message,
-        to_email: 'sachin@graphicawork.xyz',
+        to_email: 'sachin@graphicawork.online',
         // Additional parameters that might be needed
         name: formData.name,
         email: formData.email
@@ -87,7 +87,7 @@ function Contact() {
               <div className="contact-icon">@</div>
               <div>
                 <h3>Email</h3>
-                <p>sachin@graphicawork.xyz</p>
+                <p>sachin@graphicawork.online</p>
               </div>
             </div>
             
@@ -193,7 +193,7 @@ function Contact() {
             
             {submitStatus === 'error' && (
               <div className="error-message">
-                Sorry, there was an error sending your message. Please try again or contact me directly at sachin@graphicawork.xyz
+                Sorry, there was an error sending your message. Please try again or contact me directly at sachin@graphicawork.online
               </div>
             )}
           </form>

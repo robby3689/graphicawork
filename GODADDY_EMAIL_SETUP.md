@@ -1,13 +1,13 @@
 # 📧 GoDaddy Email Setup Guide for Contact Form
 
-## Your Email: `sachin@graphicawork.xyz`
+## Your Email: `sachin@graphicawork.online`
 
 Your contact form is now configured to send emails to your GoDaddy email! Follow these steps to complete the setup:
 
 ## Step 1: Create EmailJS Account
 1. Go to [https://www.emailjs.com/](https://www.emailjs.com/)
 2. Click **"Sign Up"** (it's free!)
-3. Use your email: `sachin@graphicawork.xyz`
+3. Use your email: `sachin@graphicawork.online`
 4. Verify your email address
 
 ## Step 2: Add GoDaddy Email Service
@@ -18,7 +18,7 @@ Your contact form is now configured to send emails to your GoDaddy email! Follow
 5. Click **"Connect Account"**
 
 ### For GoDaddy Email Setup:
-- **Email**: `sachin@graphicawork.xyz`
+- **Email**: `sachin@graphicawork.online`
 - **Password**: Your GoDaddy email password
 - **SMTP Settings** (if needed):
   - SMTP Server: `smtpout.secureserver.net`
@@ -72,7 +72,7 @@ const publicKey = 'YOUR_PUBLIC_KEY';        // From Step 4
    - Subject: Test Message
    - Message: This is a test message from my website
 5. **Submit the form**
-6. **Check your GoDaddy email** (`sachin@graphicawork.xyz`)
+6. **Check your GoDaddy email** (`sachin@graphicawork.online`)
 
 ## 🎯 What You'll Receive:
 
@@ -101,7 +101,7 @@ Reply to: test@example.com
 - **Outgoing Server**: `smtpout.secureserver.net`
 - **Port**: `465` (SSL) or `587` (TLS)
 - **Authentication**: Required
-- **Username**: `sachin@graphicawork.xyz`
+- **Username**: `sachin@graphicawork.online`
 - **Password**: Your email password
 
 ## ✅ Success Checklist:
@@ -115,6 +115,6 @@ Reply to: test@example.com
 
 ## 🚀 You're All Set!
 
-Once you complete these steps, your contact form will send all messages directly to `sachin@graphicawork.xyz`!
+Once you complete these steps, your contact form will send all messages directly to `sachin@graphicawork.online`!
 
 **Need help with any step?** Let me know and I'll guide you through it!

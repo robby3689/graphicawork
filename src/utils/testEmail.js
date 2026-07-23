@@ -9,7 +9,7 @@ export const testEmailSetup = async () => {
       from_email: 'test@example.com',
       subject: 'Test Message from Website',
       message: 'This is a test message to verify email setup is working correctly.',
-      to_email: 'sachin@graphicawork.xyz'
+      to_email: 'sachin@graphicawork.online'
     };
 
     console.log('Testing email setup...');
@@ -35,7 +35,7 @@ HOW TO TEST YOUR EMAIL SETUP:
 6. Check your GoDaddy email inbox
 
 Expected Result:
-You should receive a test email at sachin@graphicawork.xyz
+You should receive a test email at sachin@graphicawork.online
 
 If no email arrives:
 - Check spam folder
